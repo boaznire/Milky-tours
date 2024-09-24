@@ -62,6 +62,43 @@ footer {
         width: 90%; /* Increase image size on mobile for better visibility */
     }
 }
+/* Social media icon styling */
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Align icons horizontally to the left */
+    gap: 10px; /* Add space between icons */
+    margin-bottom: 20px; /* Space between icons and the image */
+}
+
+.icon-link {
+    font-size: 24px; /* Adjust icon size */
+    color: #000; /* Icon color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #0077cc; /* Change color on hover */
+}
+
+#social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    #social-media {
+        flex-direction: column; /* Stack icons and image vertically on small screens */
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-bottom: 10px;
+        justify-content: center; /* Center icons on small screens */
+    }
+}
 
 
 
