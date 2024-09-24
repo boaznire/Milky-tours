@@ -37,66 +37,61 @@ footer {
 
 /* Frame container styling */
 .frame-container {
-    border: 5px solid #000; /* Black border for the frame */
-    padding: 20px; /* Space between the border and the content */
-    margin: 20px auto; /* Center the container on the page */
-    max-width: 1200px; /* Limit the width of the frame */
-    background-color: #fff; /* Background color inside the frame */
-    box-sizing: border-box; /* Ensure padding doesn't overflow the content */
+    border: 5px solid #000;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Social media icon styling */
+.social-icons {
+    margin-top: 20px; /* Adds space between the headline and icons */
+    text-align: center; /* Centers the icons horizontally */
+}
+
+.icon-link {
+    font-size: 40px; /* Adjust the size of the icons */
+    margin: 0 15px; /* Space between each icon */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+/* Original colors for each social media platform */
+.icon-link.facebook {
+    color: #4267B2; /* Facebook blue */
+}
+
+.icon-link.instagram {
+    color: #E1306C; /* Instagram pink */
+}
+
+.icon-link.tiktok {
+    color: #69C9D0; /* TikTok teal */
+}
+
+/* Hover effect */
+.icon-link:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
 }
 
 /* Reduce the image size by 30% */
 .feature-image {
-    width: 70%; /* 70% of the original size */
-    display: block; /* Make sure the image behaves properly inside the container */
-    margin: 0 auto; /* Center the images */
+    width: 70%;
+    display: block;
+    margin: 0 auto;
 }
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .frame-container {
-        max-width: 95%; /* Take up almost full screen width on smaller devices */
-        padding: 15px; /* Adjust padding for smaller screens */
+        max-width: 95%;
+        padding: 15px;
     }
 
     .feature-image {
-        width: 90%; /* Increase image size on mobile for better visibility */
-    }
-}
-/* Social media icon styling */
-.social-icons {
-    display: flex;
-    justify-content: flex-start; /* Align icons horizontally to the left */
-    gap: 10px; /* Add space between icons */
-    margin-bottom: 20px; /* Space between icons and the image */
-}
-
-.icon-link {
-    font-size: 24px; /* Adjust icon size */
-    color: #000; /* Icon color */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.icon-link:hover {
-    color: #0077cc; /* Change color on hover */
-}
-
-#social-media {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Adjust for mobile screens */
-@media (max-width: 768px) {
-    #social-media {
-        flex-direction: column; /* Stack icons and image vertically on small screens */
-        align-items: center;
-    }
-
-    .social-icons {
-        margin-bottom: 10px;
-        justify-content: center; /* Center icons on small screens */
+        width: 90%;
     }
 }
 
