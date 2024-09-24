@@ -37,31 +37,33 @@ footer {
 
 /* Frame container styling */
 .frame-container {
-    border: 5px solid #000; /* Black border for the frame */
-    padding: 20px; /* Space between the border and the content */
-    margin: 20px auto; /* Center the container on the page */
-    max-width: 1200px; /* Limit the width of the frame */
-    background-color: #fff; /* Background color inside the frame */
-    box-sizing: border-box; /* Ensure padding doesn't overflow the content */
+    border: 5px solid #000;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    box-sizing: border-box;
 }
 
 /* Reduce the image size by 30% */
 .feature-image {
-    width: 70%; /* 70% of the original size */
-    display: block; /* Make sure the image behaves properly inside the container */
-    margin: 0 auto; /* Center the images */
+    width: 70%;
+    display: block;
+    margin: 0 auto;
 }
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .frame-container {
-        max-width: 95%; /* Take up almost full screen width on smaller devices */
-        padding: 15px; /* Adjust padding for smaller screens */
+        max-width: 95%;
+        padding: 15px;
     }
 
     .feature-image {
-        width: 90%; /* Increase image size on mobile for better visibility */
+        width: 90%;
     }
 }
+
 
 
 
