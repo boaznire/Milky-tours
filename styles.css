@@ -35,9 +35,22 @@ footer {
     color: #fff;
 }
 
-.feature-image {
-    width: 70%; /* Reduces the image size to 70% of its original size (100% - 30%) */
+/* Frame container styling */
+.frame-container {
+    border: 5px solid #000; /* Black border for the frame */
+    padding: 20px; /* Space between the border and the content */
+    margin: 20px auto; /* Center the container on the page */
+    max-width: 1200px; /* Limit the width of the frame */
+    background-color: #fff; /* Background color inside the frame */
 }
+
+/* Reduce the image size by 30% */
+.feature-image {
+    width: 70%; /* 70% of the original size */
+    display: block; /* Make sure the image behaves properly inside the container */
+    margin: 0 auto; /* Center the images */
+}
+
 
 
 /* Add more styles as needed */
