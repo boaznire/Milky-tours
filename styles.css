@@ -52,23 +52,11 @@ footer {
 }
 
 .icon-link {
-    font-size: 40px; /* Adjust the size of the icons */
-    margin: 0 15px; /* Space between each icon */
+    font-size: 80px; /* Icons are now twice the original size (40px * 2 = 80px) */
+    margin: 0 20px; /* Increase space between each icon */
     text-decoration: none;
+    color: inherit; /* Match the color of the headline */
     transition: transform 0.3s ease;
-}
-
-/* Original colors for each social media platform */
-.icon-link.facebook {
-    color: #4267B2; /* Facebook blue */
-}
-
-.icon-link.instagram {
-    color: #E1306C; /* Instagram pink */
-}
-
-.icon-link.tiktok {
-    color: #69C9D0; /* TikTok teal */
 }
 
 /* Hover effect */
@@ -93,7 +81,12 @@ footer {
     .feature-image {
         width: 90%;
     }
+
+    .icon-link {
+        font-size: 60px; /* Slightly smaller icons for mobile */
+    }
 }
+
 
 
 
