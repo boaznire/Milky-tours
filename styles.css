@@ -42,6 +42,7 @@ footer {
     margin: 20px auto; /* Center the container on the page */
     max-width: 1200px; /* Limit the width of the frame */
     background-color: #fff; /* Background color inside the frame */
+    box-sizing: border-box; /* Ensure padding doesn't overflow the content */
 }
 
 /* Reduce the image size by 30% */
@@ -49,6 +50,17 @@ footer {
     width: 70%; /* 70% of the original size */
     display: block; /* Make sure the image behaves properly inside the container */
     margin: 0 auto; /* Center the images */
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .frame-container {
+        max-width: 95%; /* Take up almost full screen width on smaller devices */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .feature-image {
+        width: 90%; /* Increase image size on mobile for better visibility */
+    }
 }
 
 
