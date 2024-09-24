@@ -1,0 +1,7 @@
+/project-folder
+│
+├── index.html              # Main HTML file
+├── styles.css              # Main CSS file
+├── social-media.html       # Social media links file
+├── social-media.css        # Social media CSS file
+├── /images                 # Images folder
