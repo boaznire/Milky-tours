@@ -35,4 +35,9 @@ footer {
     color: #fff;
 }
 
+.feature-image {
+    width: 70%; /* Reduces the image size to 70% of its original size (100% - 30%) */
+}
+
+
 /* Add more styles as needed */
