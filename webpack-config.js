@@ -16,14 +16,19 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
   ],
   devServer: {
-    static: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
     compress: true,
-    port: 3000,
+    port: 8080,
   },
 };
