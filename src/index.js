@@ -1,5 +1,7 @@
 console.log('React application script is running');
 
+import './styles/styles.css';
+import './styles/social-media.css';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
