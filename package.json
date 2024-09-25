@@ -1,4 +1,4 @@
-@'
+$packageJson = @"
 {
   "name": "milky-tours",
   "version": "1.0.0",
@@ -23,4 +23,4 @@
     "html-webpack-plugin": "^5.5.1"
   }
 }
-'@ | Out-File -Encoding utf8 package.json -NoNewline
+"@
