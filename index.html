@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>מילקי תיירות - הרפתקאות למרחקים ארוכים במחיר משתלם</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="social-media.css"> <!-- Link to the social media CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
 </head>
 <body>
     <div class="frame-container">
         <header>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#intro">ראשי</a></li>
+                    <li><a href="#destinations">יעדים</a></li>
+                    <li><a href="#advantages">היתרונות שלנו</a></li>
+                    <li><a href="#why-choose-us">למה לבחור בנו</a></li>
+                    <li><a href="#contact">צור קשר</a></li>
+                </ul>
+            </nav>
             <h1>מילקי תיירות: השער שלך להרפתקאות למרחקים ארוכים במחיר משתלם</h1>
-            <!-- Include the social media section -->
-            <div id="social-media-container">
-                <!-- Use server-side include or iframe -->
-                <iframe src="social-media.html" style="border: none; width: 100%; height: 100px;"></iframe>
-            </div>
         </header>
 
         <main>
@@ -24,6 +26,16 @@
                 <h2>גלו את העולם מבלי לרוקן את הכיס</h2>
                 <p>במילקי תיירות, אנו מבינים שהמסע חשוב לא פחות מהיעד. לכן אנו מתמחים במתן שילובים שאין להם מתחרים של מחיר ומשך טיסה לנסיעות למרחקים ארוכים.</p>
                 <img src="image1.png" alt="זוג מטיילים מאושר" class="feature-image">
+                <a href="#contact" class="cta-button">הזמן טיול עכשיו</a>
+            </section>
+
+            <section id="social-media">
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="icon-link">פייסבוק</a>
+                    <a href="https://instagram.com" target="_blank" class="icon-link">אינסטגרם</a>
+                    <a href="https://tiktok.com" target="_blank" class="icon-link">טיקטוק</a>
+                </div>
+                <img src="image2.png" alt="זוג מטיילים שמח" class="feature-image">
             </section>
 
             <section id="advantages">
@@ -34,6 +46,7 @@
                     <li>מסלולים מותאמים אישית</li>
                 </ul>
                 <img src="image2.png" alt="זוג מטיילים שמח" class="feature-image">
+                <a href="#contact" class="cta-button">קבל הצעת מחיר</a>
             </section>
 
             <section id="destinations">
@@ -51,6 +64,7 @@
                     <p>עמדו ביראת כבוד מול הגרנד קניון, הרגישו את האנרגיה של ניו יורק, התחממו בשמש של הוואי</p>
                 </div>
                 <img src="image3.png" alt="משפחה מטיילת" class="feature-image">
+                <a href="#contact" class="cta-button">תכנן את הטיול שלך</a>
             </section>
 
             <section id="why-choose-us">
@@ -61,6 +75,22 @@
                     <li>תמיכה 24/7: מומחי הנסיעות שלנו תמיד מוכנים לסייע לכם</li>
                 </ul>
                 <img src="image4.png" alt="משפחה מרובת דורות נהנית מטיול" class="feature-image">
+            </section>
+
+            <section id="contact">
+                <h2>צור קשר</h2>
+                <form>
+                    <label for="name">שם:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">אימייל:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">הודעה:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit" class="cta-button">שלח</button>
+                </form>
             </section>
         </main>
 
